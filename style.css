@@ -18,7 +18,7 @@ body {
     padding: 0 24px;
 }
 
-/* Hero Section (تحسين المظهر ليكون غير مقصوص) */
+/* Hero Section  */
 .hero {
     background: linear-gradient(145deg, #ebf5e8, #f8f2ea);
     padding: 80px 20px 100px;
@@ -61,7 +61,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* Header (شريط علوي ثابت) */
+/* Header  */
 .header-wrapper {
     position: sticky;
     top: 0;
