@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روضة | متجر نباتات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!--القسم الترحيبي-->
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>🌱 أحيي مساحتك بالخضرة 🌿</h2>
+            <p>نباتات منتقاة بعناية لتناسب زوايا منزلك وتضفي عليه لمسة من الطبيعة.</p>
+            <button class="btn-primary" id="shopNowBtn">تسوق الآن <i class="fas fa-arrow-down"></i></button>
+        </div>
+    </section>
+
+    <!--الهيدر-->
+
+    <div class="header-wrapper">
+        <div class="container header">
+            <div class="logo">
+                <h1>🌿روضة</h1>
+                <p>نباتات تُحيي مساحتك</p>
+            </div>
+        <div class="header-actions">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="ابحث عن نباتك المفضل...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        <div class="cart-icon" id="cartIcon">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cartCount" id="cartCount">0</span>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+    <!--شريط الفلاتر-->
+
+    <div class="container">
+        <div class="filter-bar">
+            <button class="filter-btn active" data-category="all">🌿 الرئيسية</button>
+            <button class="filter-btn" data-category="indoor">🏠 داخلية</button>
+            <button class="filter-btn" data-category="outdoor">🌳 خارجية</button>
+        </div>
+    </div>
+
+    <!--شبكة المنتجات-->
+    <div class="container">
+        <div id="productsContainer" class="products-grid"></div>
+    </div>
+
+    <footer>
+        <p>🌿 روضة - نضارة طبيعية لمنزلك 🌸</p>
+    </footer>
+
+    <!--إشعارات-->
+
+    <div id="toastMsg" class="toast-notify">
+        <i class="fas fa-check-circle"></i> <span id="toastText"></span>
+    </div>
+
+    <!--سلة المشتريات-->
+
+    <div id="cartDrawer" class="cart-drawer">
+        <div class="cart-overlay" id="cartOverlay"></div>
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-bag"></i> سلة المشتريات</h3>
+                <button class="close-cart" id="closeCartBtn"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="cartItemsList" class="cart-items-list">
+                <div class="empty-cart-msg">سلة فارغة، أضف نباتاتك المفضلة 🌱</div>
+            </div>
+            <div class="cart-total">
+                <span>المجموع:</span>
+                <span id="cartTotalAmount">0 ر.س</span>
+            </div>
+            <button id="checkoutBtn" class="checkout-btn">إتمام عملية الشراء <i class="fas fa-credit-card"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
