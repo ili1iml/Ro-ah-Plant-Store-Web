@@ -17,7 +17,7 @@ Roḍah is a clean and modern plant shopping web application that allows users t
 
 # Technologies Used 🛠️
 * HTML5
-*CSS3
-*JavaScript  (Vanilla JS)
+* CSS3
+* JavaScript  (Vanilla JS)
 
   
